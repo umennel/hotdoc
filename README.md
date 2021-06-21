@@ -2,6 +2,14 @@
 
 Simple script to render beautiful HTML from Markdown.
 
+### Quickstart
+
+```bash
+pipenv install .
+```
+
+### Example
+
 See an example here:
 
 ```bash
