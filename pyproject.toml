@@ -1,6 +1,25 @@
+[tool.poetry]
+name = "hotdoc"
+version = "0.1.0"
+description = ""
+authors = ["Uche Mennel <umennel@gmx.ch>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyppeteer = "*"
+jinja2 = "*"
+markdown = "*"
+pyyaml = "*"
+cssutils = "*"
+beautifulsoup4 = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+hotdoc = "hotdoc.__main__:main"
+
 [build-system]
-requires = [
-    "setuptools>=42",
-    "wheel"
-]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
